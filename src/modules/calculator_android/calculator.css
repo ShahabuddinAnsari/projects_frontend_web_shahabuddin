@@ -1,0 +1,126 @@
+.android__calc__app__containter {
+  --background-dark: #59623f;
+  --background-operatorBtn: lightgray;
+  background-color: var(--background-dark);
+  color: white;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.result {
+  height: 150px;
+  width: 486px;
+  background-color: black;
+}
+
+.keypads {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas:
+    "plus multiply minus division"
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero dot clear equal";
+  grid-gap: 2px;
+}
+
+.key {
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 80px;
+}
+
+.key:hover,
+.key:focus {
+  opacity: 0.9;
+}
+
+.operator {
+  background-color: var(--background-operatorBtn);
+}
+
+.key:active {
+  opacity: 0.7;
+}
+
+.grid-plus {
+  grid-area: plus;
+}
+
+.grid-multiply {
+  grid-area: multiply;
+}
+
+.grid-minus {
+  grid-area: minus;
+}
+
+.grid-division {
+  grid-area: division;
+}
+
+.grid-one {
+  grid-area: one;
+}
+
+.grid-two {
+  grid-area: two;
+}
+
+.grid-three {
+  grid-area: three;
+}
+
+.grid-four {
+  grid-area: four;
+}
+
+.grid-five {
+  grid-area: five;
+}
+
+.grid-six {
+  grid-area: six;
+}
+
+.grid-seven {
+  grid-area: seven;
+}
+
+.grid-eight {
+  grid-area: eight;
+}
+
+.grid-nine {
+  grid-area: nine;
+}
+
+.grid-zero {
+  grid-area: zero;
+}
+
+.grid-dot {
+  grid-area: dot;
+}
+
+.grid-clear {
+  grid-area: clear;
+}
+
+.grid-equal {
+  grid-area: equal;
+  background-color: orange;
+  height: 100%;
+}

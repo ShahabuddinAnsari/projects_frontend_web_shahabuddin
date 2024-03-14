@@ -1,0 +1,20 @@
+.navbar_main {
+  background-color: #333;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+}
+
+.navbar_main > div {
+  padding: 1em;
+  text-align: center;
+}
+
+.navbar_main > div:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.navbar_main > div:active {
+  background-color: darkgray;
+}
